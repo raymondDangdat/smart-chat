@@ -15,8 +15,6 @@ class _AuthScreenState extends State<AuthScreen> {
   var _isLoading = false;
   void _submitAuthForm(String email, String password, String username,
       bool isLogin, BuildContext ctx) async {
-
-
     try {
       setState(() {
         _isLoading = true;
@@ -25,11 +23,13 @@ class _AuthScreenState extends State<AuthScreen> {
         //  Login user
 
         user = (await _auth.signInWithEmailAndPassword(
-            email: email, password: password)).user;
+                email: email, password: password))
+            .user;
       } else {
         //  Sign user up
-        user = (await  _auth.createUserWithEmailAndPassword(
-            email: email, password: password)).user;
+        user = (await _auth.createUserWithEmailAndPassword(
+                email: email, password: password))
+            .user;
         await FirebaseFirestore.instance
             .collection('smartChatUsers')
             .doc(user.uid)

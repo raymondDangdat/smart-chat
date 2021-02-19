@@ -1,6 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:smart_chat/widgets/chats/messages.dart';
+import 'package:smart_chat/widgets/chats/new_message.dart';
 
 class ChatScreen extends StatelessWidget {
   @override
@@ -13,22 +15,22 @@ class ChatScreen extends StatelessWidget {
           DropdownButton(
             items: [
               DropdownMenuItem(
-                  child: Container(
-                child: Row(
-                  children: [
-                    Icon(Icons.exit_to_app),
-                    SizedBox(
-                      width: 8.0,
-                    ),
-                    Text("Logout"),
-                  ],
+                child: Container(
+                  child: Row(
+                    children: [
+                      Icon(Icons.exit_to_app),
+                      SizedBox(
+                        width: 8.0,
+                      ),
+                      Text("Logout"),
+                    ],
+                  ),
                 ),
-              ),
                 value: 'logout',
               )
             ],
-            onChanged: (itemIdentifier){
-              if(itemIdentifier == 'logout'){
+            onChanged: (itemIdentifier) {
+              if (itemIdentifier == 'logout') {
                 FirebaseAuth.instance.signOut();
               }
             },
@@ -39,32 +41,15 @@ class ChatScreen extends StatelessWidget {
           )
         ],
       ),
-      body: StreamBuilder(
-          stream: FirebaseFirestore.instance
-              .collection("chats/jlHzu9z97NFVTz6lZVCj/messages")
-              .snapshots(),
-          builder: (ctx, streamSnapshot) {
-            if (streamSnapshot.connectionState == ConnectionState.waiting) {
-              return Center(
-                child: CircularProgressIndicator(),
-              );
-            }
-            final documents = streamSnapshot.data.docs;
-            return ListView.builder(
-                itemCount: documents.length,
-                itemBuilder: (ctx, index) => Container(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(documents[index]['text']),
-                    ));
-          }),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
-        onPressed: () {
-          FirebaseFirestore.instance
-              .collection("chats/jlHzu9z97NFVTz6lZVCj/messages")
-              .add({'text': 'New dummy hardcoded value'});
-        },
+      body: Container(
+        child: Column(
+          children: [
+            Expanded(child: Messages()),
+            NewMessage(),
+          ],
+        ),
       ),
+      //
     );
   }
 }
