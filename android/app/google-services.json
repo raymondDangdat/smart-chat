@@ -1,0 +1,296 @@
+{
+  "project_info": {
+    "project_number": "41572152740",
+    "firebase_url": "https://raaxo-1570b.firebaseio.com",
+    "project_id": "raaxo-1570b",
+    "storage_bucket": "raaxo-1570b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41572152740:android:9ddca3795cdbd15bb07d31",
+        "android_client_info": {
+          "package_name": "com.example.quiz_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41572152740-4jev82jl9imo5v1b591li1nt9m6ph34e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfUax5Mcsz1aI_UN6Zx_BHRZL3ipY5RU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41572152740-4jev82jl9imo5v1b591li1nt9m6ph34e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41572152740:android:ae7a59816fd5e538b07d31",
+        "android_client_info": {
+          "package_name": "com.example.smart_time_tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41572152740-7sfooertbvghkk5qm7o123gbjbed2kvv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smart_time_tracker",
+            "certificate_hash": "0a9741fcce47d6ac27f47d88ed7e2b4869db9452"
+          }
+        },
+        {
+          "client_id": "41572152740-4jev82jl9imo5v1b591li1nt9m6ph34e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfUax5Mcsz1aI_UN6Zx_BHRZL3ipY5RU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41572152740-4jev82jl9imo5v1b591li1nt9m6ph34e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41572152740:android:6d547afcff42dff9b07d31",
+        "android_client_info": {
+          "package_name": "com.raaxo.ng.raaxo_trivia_quiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41572152740-pvt2lmk690rscom8a0tvjr6td54b84bi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.raaxo.ng.raaxo_trivia_quiz",
+            "certificate_hash": "46dadfdc2cc9b8e62032e7d16d57a3d4ca4047ba"
+          }
+        },
+        {
+          "client_id": "41572152740-4jev82jl9imo5v1b591li1nt9m6ph34e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfUax5Mcsz1aI_UN6Zx_BHRZL3ipY5RU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41572152740-4jev82jl9imo5v1b591li1nt9m6ph34e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41572152740:android:094bc46638df9390b07d31",
+        "android_client_info": {
+          "package_name": "com.raxao.trivial_app2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41572152740-4jev82jl9imo5v1b591li1nt9m6ph34e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfUax5Mcsz1aI_UN6Zx_BHRZL3ipY5RU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41572152740-4jev82jl9imo5v1b591li1nt9m6ph34e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41572152740:android:e1ebac7ebacf837bb07d31",
+        "android_client_info": {
+          "package_name": "com.raymond.raaxo.food_delivery_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41572152740-4jev82jl9imo5v1b591li1nt9m6ph34e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfUax5Mcsz1aI_UN6Zx_BHRZL3ipY5RU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41572152740-4jev82jl9imo5v1b591li1nt9m6ph34e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41572152740:android:5592d8b4fd1d4746b07d31",
+        "android_client_info": {
+          "package_name": "com.raymond.raaxo.smarrt_connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41572152740-qrms50krilt0fpkl6bh0da1qcu2f3okj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.raymond.raaxo.smarrt_connect",
+            "certificate_hash": "0a9741fcce47d6ac27f47d88ed7e2b4869db9452"
+          }
+        },
+        {
+          "client_id": "41572152740-4jev82jl9imo5v1b591li1nt9m6ph34e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfUax5Mcsz1aI_UN6Zx_BHRZL3ipY5RU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41572152740-4jev82jl9imo5v1b591li1nt9m6ph34e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41572152740:android:f18c88e54adb0b5cb07d31",
+        "android_client_info": {
+          "package_name": "com.raymond.raaxo.smart_shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41572152740-4jev82jl9imo5v1b591li1nt9m6ph34e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfUax5Mcsz1aI_UN6Zx_BHRZL3ipY5RU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41572152740-4jev82jl9imo5v1b591li1nt9m6ph34e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41572152740:android:7a1dadfd50ec3e59b07d31",
+        "android_client_info": {
+          "package_name": "com.raymond.raaxo.tef"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41572152740-4jev82jl9imo5v1b591li1nt9m6ph34e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfUax5Mcsz1aI_UN6Zx_BHRZL3ipY5RU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41572152740-4jev82jl9imo5v1b591li1nt9m6ph34e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41572152740:android:55a8b2420d2c8b7bb07d31",
+        "android_client_info": {
+          "package_name": "com.smart_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41572152740-4jev82jl9imo5v1b591li1nt9m6ph34e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfUax5Mcsz1aI_UN6Zx_BHRZL3ipY5RU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41572152740-4jev82jl9imo5v1b591li1nt9m6ph34e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
