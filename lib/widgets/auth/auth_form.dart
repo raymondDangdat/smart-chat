@@ -69,6 +69,9 @@ class _AuthFormState extends State<AuthForm> {
                     if(!_isLogin) USerImagePicker(_pickedImage),
                     TextFormField(
                       key: ValueKey('email'),
+                      textCapitalization: TextCapitalization.none,
+                      autocorrect: false,
+                      enableSuggestions: false,
                       keyboardType: TextInputType.emailAddress,
                       validator: (value) {
                         if (value.isEmpty ||
@@ -88,6 +91,9 @@ class _AuthFormState extends State<AuthForm> {
                     if (!_isLogin)
                       TextFormField(
                         key: ValueKey('username'),
+                        textCapitalization: TextCapitalization.words,
+                        autocorrect: true,
+                        enableSuggestions: false,
                         validator: (value) {
                           if (value.isEmpty || value.length < 4) {
                             return 'Username should be at least 4 characters';

@@ -13,6 +13,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   @override
   void initState() {
+    super.initState();
     final fbm =  FirebaseMessaging();
     fbm.requestNotificationPermissions();
     fbm.configure(onMessage: (msg){
@@ -26,7 +27,6 @@ class _ChatScreenState extends State<ChatScreen> {
       return;
     });
     fbm.subscribeToTopic("smartChatChat");
-    super.initState();
   }
   @override
   Widget build(BuildContext context) {
@@ -36,6 +36,7 @@ class _ChatScreenState extends State<ChatScreen> {
         title: Text("Smart Chat"),
         actions: [
           DropdownButton(
+            underline: Container(),
             items: [
               DropdownMenuItem(
                 child: Container(
