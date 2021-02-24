@@ -1,8 +1,11 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import '../picker/user_image_picker.dart';
 
 class AuthForm extends StatefulWidget {
   AuthForm(this.submitFn, this._isLoading);
-  final void Function(String email, String password, String username,
+  final void Function(String email, String password, String username, File image,
       bool isLogin, BuildContext ctx) submitFn;
   bool _isLoading;
   @override
@@ -15,9 +18,21 @@ class _AuthFormState extends State<AuthForm> {
 
   var _isLogin = true;
   var _isHidden = true;
+  File _userProfilePic;
+
+
+
+  void _pickedImage(File image){
+    _userProfilePic = image;
+  }
 
   void _trySubmit() {
     final isValid = _formKey.currentState.validate();
+
+    if(_userProfilePic == null && !_isLogin){
+      Scaffold.of(context).showSnackBar(SnackBar(content: Text('Please pick an image'), backgroundColor: Theme.of(context).errorColor,));
+      return;
+    }
 
     if (isValid) {
       _formKey.currentState.save();
@@ -26,10 +41,12 @@ class _AuthFormState extends State<AuthForm> {
       FocusScope.of(context).unfocus();
 
       //  Use values to send auth result
-      widget.submitFn(_userEmail.trim(), _userPassword.trim(), _username,
+      widget.submitFn(_userEmail.trim(), _userPassword.trim(), _username, _userProfilePic,
           _isLogin, context);
     }
   }
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -49,6 +66,7 @@ class _AuthFormState extends State<AuthForm> {
                   //  Give the column the exact size it wants
                   mainAxisSize: MainAxisSize.min,
                   children: [
+                    if(!_isLogin) USerImagePicker(_pickedImage),
                     TextFormField(
                       key: ValueKey('email'),
                       keyboardType: TextInputType.emailAddress,
