@@ -13,8 +13,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cloud_firestore: ^0.16.0+1
+  cloud_firestore:
   firebase_auth: ^0.20.1
+  image_picker: ^0.6.5+3
+  firebase_storage:
+  fluttertoast: ^7.1.6
+  firebase_messaging:
 
 
 
